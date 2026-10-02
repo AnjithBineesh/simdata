@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simdata"
+version = "0.1.0"
+description = "Python library for virtual robotic sensor and data simulation"
+requires-python = ">=3.10"
+
+dependencies = [
+    "rosbags>=0.11",
+    "numpy>=2.0",
+    "scipy>=1.15",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+"simdata.datasets" = ["builtin/*.bag"]
+"simdata.trajectory" = ["cache/*.json"]
