@@ -55,3 +55,10 @@ class OdomSample:
     angular_velocity_x: float
     angular_velocity_y: float
     angular_velocity_z: float
+
+@dataclass
+class Pose2D:
+    timestamp: float
+    x: float
+    y: float
+    theta: float

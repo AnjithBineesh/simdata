@@ -1,19 +1,20 @@
 # Python
 __pycache__/
 *.py[cod]
-*.so
+*$py.class
 
-# Virtual environment
+# Build / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Virtual environments
 .venv/
 venv/
 env/
 
-# Packaging
-build/
-dist/
-*.egg-info/
-
-# Testing
+# Testing / coverage
 .pytest_cache/
 .coverage
 htmlcov/
@@ -24,4 +25,6 @@ htmlcov/
 
 # OS
 .DS_Store
-Thumbs.db
+
+# VS Code
+.vscode/

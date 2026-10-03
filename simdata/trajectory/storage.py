@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from simdata.trajectory.lidar_trajectory import Pose2D
+from simdata.core.types import Pose2D
 
 
 def save_trajectory(

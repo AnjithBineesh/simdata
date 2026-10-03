@@ -1,19 +1,10 @@
 import math
-from dataclasses import dataclass
 from collections.abc import Callable
 
 from simdata.core.icp import icp
 from simdata.core.lidar_geometry import scan_to_points
+from simdata.core.types import Pose2D
 from simdata.devices.lidar import SimLiDAR
-
-
-@dataclass
-class Pose2D:
-    timestamp: float
-    x: float
-    y: float
-    theta: float
-
 
 class LiDARTrajectoryBuilder:
     def __init__(
